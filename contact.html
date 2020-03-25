@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>SpaceX</title>
+</head>
+<body>
+    <header id="pagina">
+        <div>
+        <a href="index.html">
+            <img src="images/logo.png" alt="Home">
+        </a>
+        </div>
+        <div class="menu-tradicional"><a href="falcon9.html">FALCON 9</a></div>
+        <div class="menu-tradicional"><a href="falconheavy.html">FALCON HEAVY</a></div>
+        <div class="menu-tradicional"><a href="dragon.html">DRAGON</a></div>
+        <div class="menu-tradicional"><a href="starship.html">STARSHIP</a></div>
+        <div class="menu-tradicional" id="current5"><a href="contact.html">CONTACT</a></div>
+
+        <nav id="menu-mobile">
+            <img src="images/button_mobile.png" alt="menu-mobile">
+            <div id="mobile-hidden">
+                <div><a href="falcon9.html"></a> FALCON 9</div>
+                <div><a href="falconheavy.html"></a> FALCON HEAVY</div>
+                <div><a href="dragon.html"></a> DRAGON</div>
+                <div><a href="starship.html"></a> STARSHIP</div>
+                <div><a href="contact.html"></a> CONTACT</div>
+            </div>
+        </nav>
+    </header>
+
+        <main>
+        <form action="#">
+            <p>Nombre:</p>
+            <input type="text" class="field">
+            <br>
+            <p>Apellido:</p>
+            <input type="text" class="field">
+            <br>
+            <p>email:</p>
+            <input type="email" class="field">
+            <br>
+            <p>Contraseña:</p>
+            <input type="password" class="field id="pass">
+            <br>
+            <p>Fecha de nacimiento:</p>
+            <input type="date" class="field" id="nacimiento">
+            <br>
+            <p>Sexo:</p>
+            <select name="sexo" id="sexo">
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+            </select>
+            <br>
+            <p>Navegador favorito:</p>
+            <input list="navegadores" class="field">
+            <datalist id="navegadores">
+                <option value="Internet Explorer"></option>
+                <option value="Google Chrome"></option>
+                <option value="Firefox"></option>
+                <option value="Opera"></option>
+                <option value="Safari"></option>
+            </datalist>
+            <br>
+            <p>Descripción</p>
+            <textarea name="desc" id="" cols="30" rows="10"></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </form>
+        </main>
+    
+    <footer>
+        <div><img src="images/logo_footer.png" alt="logo_footer"></div>
+        <div><a href="https://twitter.com/spacex">TWITTER</a></div>
+        <div><a href="http://www.youtube.com/spacex">YOUTUBE</a></div>
+        <div><a href="http://www.flickr.com/spacexphotos">FLICKR</a></div>
+        <div><a href="http://www.instagram.com/spacex">INSTAGRAM</a></div>
+        <div class="copy">© 2020 SPACE EXPLORATION TECHNOLOGIES CORP.</div>
+    </footer>
+</body>
+</html>

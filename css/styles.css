@@ -1,0 +1,235 @@
+body{
+    margin: 0;
+
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    height: 75px;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    
+}
+
+header div{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 2em;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header div:hover a{
+    text-decoration: underline;
+}
+
+#current a{
+    text-decoration: underline;
+}
+
+#current2 a{
+    text-decoration: underline;
+}
+
+#current3 a{
+    text-decoration: underline;
+}
+
+#current4 a{
+    text-decoration: underline;
+}
+
+#current5 a{
+    text-decoration: underline;
+}
+
+nav#menu-mobile img{
+    width: 50px;
+    cursor: pointer;
+}
+
+div#mobile-hidden{
+    display: none;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: auto;
+    border: none;
+    position: fixed;
+    left: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8em;
+}
+
+div#mobile-hidden>div{
+    display: block;
+    font-size: 2em;
+    padding: 15px;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+
+#menu-mobile>img:hover+div{
+    display: block;
+}
+
+@media only screen and (max-width: 891px) {
+    .menu-tradicional{
+        display: none;
+    }
+
+    nav#menu-mobile{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 892px) {
+    .menu-tradicional{
+        display: block;
+    }
+
+    nav#menu-mobile{
+        display: none;
+    }
+}
+
+main{  
+    min-height: 650px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.falcon9{
+    background-color: black;
+    color: white;
+}
+
+.sub{
+    margin-top: 10px;
+    margin-left: 100px;
+    font-size: 50px;
+}
+
+.sub2{
+    margin-top: 10px;
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.suit{
+    width: 500px;
+}
+
+main>table{
+    width: 270px;
+    height: 280px;
+    border: 1px solid black;
+    margin: 15px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+main div{
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+footer{
+    height: 50px;
+    background-color: black;
+}
+
+footer div{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+
+}
+
+.copy{
+    font-size: 12px;
+    color: gray;
+    
+}
+
+footer div:hover a{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    header, footer, nav{
+        height: 100px;
+    }
+
+    #pagina{
+        height: auto;
+    }
+
+}
+
+@media only screen and (min-width: 769px) {
+    
+    #pagina{
+        display: flex;
+    }
+
+    main{
+        flex: 5px;
+    }
+    
+}
+  
+@media only screen and (min-width: 1200px){
+    #pagina{
+        display: flex;
+        margin: 0 auto;
+        flex-direction: row;
+    }
+
+    main{
+        flex-grow: 3;
+    }
+}
+
+
+form{
+    background-color: white;
+    color: gray;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 0 auto;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+button{
+    padding: 7px;
+    width: 100px;
+    border-radius: 5px;
+    font-family: Arial;
+    color: white;
+    background-color: goldenrod;
+    
+}
+
+.field{
+    padding: 10px;
+      
+    width: 250px;
+}
